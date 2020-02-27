@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour
         if (Math.Abs(input.sqrMagnitude) > 0.01f)
         {
             this.aim = input;
-            this.gun.transform.localPosition = this.aim.normalized * 1f;
+            this.gun.transform.localPosition = this.aim.normalized * 2f;
             this.Flip();
         }
     }
